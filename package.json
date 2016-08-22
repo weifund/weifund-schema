@@ -1,0 +1,16 @@
+{
+  "name": "weifundschemavalidator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/tests.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ajv": "^4.5.0",
+    "jshint": "^2.9.3",
+    "mocha": "^3.0.2"
+  }
+}
