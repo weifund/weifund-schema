@@ -1,0 +1,5 @@
+{ "keyword": "required",
+    "dataPath": ".abi[0]",
+    "schemaPath": "#/properties/abi/items/required",
+    "params": { "missingProperty": "anonymous" },
+    "message": "should have required property \"anonymous\"" }

@@ -1,0 +1,5 @@
+{ "keyword": "required",
+    "dataPath": "",
+    "schemaPath": "#/required",
+    "params": { "missingProperty": "compiler" },
+    "message": "should have required property \"compiler\"" }

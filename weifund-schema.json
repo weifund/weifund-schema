@@ -1,0 +1,206 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+	"@context": {
+	    "type": "string"
+	},
+	"@type": {
+	    "type": "string"
+	},
+	"version": {
+	    "type": "string"
+	},
+	"address": {
+	    "type": "string"
+	},
+	"compiler": {
+	    "type": "string"
+	},
+	"compilerFlags": {
+	    "type": "string"
+	},
+	"acompilerVersion": {
+	    "type": "string"
+	},
+	"bytecode": {
+	    "type": "string"
+	},
+	"source": {
+	    "type": "string"
+	},
+	"abi": {
+	    "type": "array",
+	    "items": {
+		"type": "object",
+		"properties": {
+		    "anonymous": {
+			"type": "boolean"
+		    },
+		    "inputs": {
+			"type": "array",
+			"items": {
+			    "type": "object",
+			    "properties": {
+				"indexed": {
+				    "type": "boolean"
+				},
+				"name": {
+				    "type": "string"
+				},
+				"type": {
+				    "type": "string"
+				}
+			    },
+			    "required": [
+				"indexed",
+				"name",
+				"type"
+			    ]
+			}
+		    },
+		    "name": {
+			"type": "string"
+		    },
+		    "type": {
+			"type": "string"
+		    }
+		},
+		"required": [
+		    "anonymous",
+		    "inputs",
+		    "name",
+		    "type"
+		]
+	    }
+	},
+	"transactionHash": {
+	    "type": "string"
+	},
+	"url": {
+	    "type": "string"
+	},
+	"category": {
+	    "type": "string"
+	},
+	"image": {
+	    "type": "string"
+	},
+	"mainEntity": {
+	    "type": "string"
+	},
+	"i18n": {
+	    "type": "object",
+	    "properties": {
+		"en": {
+		    "type": "object",
+		    "properties": {
+			"name": {
+			    "type": "string"
+			},
+			"alternateName": {
+			    "type": "string"
+			},
+			"description": {
+			    "type": "string"
+			},
+			"disambiguatedDescription": {
+			    "type": "string"
+			},
+			"about": {
+			    "type": "string"
+			},
+			"contributionDisclaimer": {
+			    "type": "string"
+			},
+			"payoutDisclaimer": {
+			    "type": "string"
+			},
+			"refundDisclaimer": {
+			    "type": "string"
+			}
+		    },
+		    "required": [
+			"name",
+			"alternateName",
+			"description",
+			"disambiguatedDescription",
+			"about",
+			"contributionDisclaimer",
+			"payoutDisclaimer",
+			"refundDisclaimer"
+		    ]
+		}
+	    },
+	    "required": [
+		"en"
+	    ]
+	},
+	"mailChimp": {
+	    "type": "object",
+	    "properties": {
+		"forms": {
+		    "type": "array",
+		    "items": {
+			"type": "object",
+			"properties": {
+			    "@context": {
+				"type": "string"
+			    },
+			    "@type": {
+				"type": "string"
+			    },
+			    "action": {
+				"type": "string"
+			    },
+			    "fields": {
+				"type": "object",
+				"properties": {
+				    "email": {
+					"type": "integer"
+				    }
+				},
+				"required": [
+				    "email"
+				]
+			    }
+			},
+			"required": [
+			    "@context",
+			    "@type",
+			    "action",
+			    "fields"
+			]
+		    }
+		}
+	    },
+	    "required": [
+		"forms"
+	    ]
+	},
+	"relatedContracts": {
+	    "type": "array",
+	    "items": {}
+	}
+    },
+    "required": [
+	"@context",
+	"@type",
+	"version",
+	"address",
+	"compiler",
+	"compilerFlags",
+	"compilerVersion",
+	"bytecode",
+	"source",
+	"abi",
+	"transactionHash",
+	"url",
+	"category",
+	"image",
+	"mainEntity",
+	"i18n",
+	"mailChimp",
+	"relatedContracts"
+    ]
+}
