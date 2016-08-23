@@ -1,3 +1,4 @@
+'use strict';
 
 const schema = require('./weifund-schema.json');
 const Ajv = require('ajv');

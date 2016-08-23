@@ -1,3 +1,5 @@
+'use strict';
+
 const validate = require('../index.js');
 
 const data1 = require('./test-01.json');
@@ -6,7 +8,7 @@ const data2 = require('./test-02.json');
 const exp1 = require('./test-01-expected.json');
 const exp2 = require('./test-02-expected.json');
 
-const assert = require('assert')
+const assert = require('assert');
 
 // the .message property is cleared from validation due to parsing of quotes in the message
 
@@ -16,8 +18,8 @@ describe('schema tests', function() {
 	    var valid1 = validate(data1);
 //	    console.log(valid1);
 
-	    valid1.errors[0].message = "";
-	    exp1.message = "";
+	    valid1.errors[0].message = '';
+	    exp1.message = '';
 	    
 //	    console.log(valid1.errors[0]);
 //	    console.log(exp1);
@@ -30,8 +32,8 @@ describe('schema tests', function() {
 	    var valid2 = validate(data2);
 //	    console.log(valid2);
 
-	    valid2.errors[0].message = "";
-	    exp2.message = "";
+	    valid2.errors[0].message = '';
+	    exp2.message = '';
 	    
 //    	    console.log(validate.errors[0]);
 //	    console.log(exp2);

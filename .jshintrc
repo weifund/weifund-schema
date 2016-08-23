@@ -13,6 +13,9 @@
 // Define globals exposed by Node.js.
 "node": true,
 
+"predef": [ "describe", "it" ],
+		    
+
 // Allow ES6.
 "esversion": 6,
 
