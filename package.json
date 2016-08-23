@@ -9,8 +9,10 @@
   },
   "author": "Shahan Khatchadourian <shahan.k.code@gmail.com>",
   "license": "ISC",
+  "dependencies": {
+    "ajv": "^4.5.0"
+  },
   "devDependencies": {
-    "ajv": "^4.5.0",
     "jshint": "^2.9.3",
     "mocha": "^3.0.2"
   }
