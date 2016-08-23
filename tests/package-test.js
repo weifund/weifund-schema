@@ -16,6 +16,7 @@ describe('schema tests', function() {
     describe('#test-01', function() {
 	it('should return a single error which says that there is a missing "anonymous" key', function() {
 	    var valid1 = validate(data1);
+	    assert(!valid1.result);
 //	    console.log(valid1);
 
 	    valid1.errors[0].message = '';
@@ -30,6 +31,7 @@ describe('schema tests', function() {
     describe('#test-02', function() {
 	it('should return a single error which says that there is a missing "compiler" key', function() {
 	    var valid2 = validate(data2);
+	    assert(!valid2.result);
 //	    console.log(valid2);
 
 	    valid2.errors[0].message = '';

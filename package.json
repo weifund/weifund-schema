@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./tests/tests.js"
+      "test": "mocha ./tests/package-test.js",
+      "jshint": "jshint ./*.js ./tests/*.js" 
   },
-  "author": "",
+  "author": "Shahan Khatchadourian <shahan.k.code@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "ajv": "^4.5.0",
