@@ -36,7 +36,8 @@
             "name": "",
             "description": "",
             "placeHolder": "",
-            "defaultValue": ""
+            "defaultValue": "",
+            "unitName": ""
           }
         ]
       }
