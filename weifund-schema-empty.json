@@ -34,7 +34,9 @@
         "abi": [
           {
             "name": "",
+            "alternateName": "",
             "description": "",
+            "disambiguatedDescription": "",
             "placeHolder": "",
             "defaultValue": "",
             "unitName": ""
