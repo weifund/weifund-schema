@@ -31,7 +31,15 @@
         "description": "",
         "disambiguatedDescription": "",
         "about": "",
-        "abi": []
+        "abi": [
+          {
+            "name": "",
+            "placeHolder": "",
+            "defaultValue": "",
+            "maxValue": "",
+            "minValue": "",
+          }
+        ]
       }
     },
     "relatedContracts": []
