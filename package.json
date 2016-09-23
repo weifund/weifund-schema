@@ -4,15 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "test": "mocha ./tests/package-test.js",
-      "jshint": "jshint ./*.js ./tests/*.js" 
+    "test": "mocha ./tests/package-test.js",
+    "browserify:example": "browserify ./examples/ipfs-cat-example.js -o ./examples/dist.js",
+    "example": "node ./examples/ipfs-cat-example.js",
+    "jshint": "jshint ./*.js ./tests/*.js"
   },
   "author": "Shahan Khatchadourian <shahan.k.code@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "ajv": "^4.5.0"
+    "ajv": "^4.5.0",
+    "ipfs-api": "^9.0.0",
+    "ipfs-js": "0.0.11"
   },
   "devDependencies": {
+    "browserify": "^13.1.0",
     "jshint": "^2.9.3",
     "mocha": "^3.0.2"
   }
